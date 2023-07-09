@@ -15443,7 +15443,7 @@ footer .instafeed-grid.gutter-extra-large {
   top: 0;
 }
 .modal-logo {
-  width: 200px;
+  height: 100px;
   margin: 15px auto;
   border-radius: 5px;
 }
@@ -15454,3 +15454,12 @@ footer .instafeed-grid.gutter-extra-large {
   padding: 5px;
   border-radius: 10px;
 }
+
+.text-wrapper {
+  max-height: 400px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+
+
