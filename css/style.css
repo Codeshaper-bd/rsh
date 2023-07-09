@@ -51,7 +51,6 @@ Table of contents
 ====================================== */
 html {
   font-size: 15px;
-  scroll-behavior: smooth !important;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -75,8 +74,7 @@ a:focus {
 }
 a:hover,
 a:active {
-  /* color: var(--base-color); */
-  color: green !important;
+  color: var(--base-color);
   text-decoration: none;
 }
 a:focus,
@@ -278,7 +276,8 @@ header [class^="container-"] [class*=" col-"] {
 
 /* base color variable*/
 :root {
-  --base-color: #ff214f;
+  /* --base-color: #ff214f; */
+  --base-color: #008000;
 }
 
 /* ===================================
@@ -918,7 +917,7 @@ a.text-very-light-gray-hover:hover {
 }
 .bg-white,
 .background-white {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .bg-black,
 .background-black {
@@ -7076,7 +7075,7 @@ a.likes-count span {
   height: auto;
 }
 .social-icon-style-8 a:hover {
-  color: green !important;
+  color: var(--base-color) !important;
 }
 
 /* icon hover effect style 9 */
@@ -7714,11 +7713,6 @@ footer .small-icon li {
   padding-left: 5px;
   position: relative;
 }
-
-.navbar {
-  position: fixed !important;
-  top: 0;
-}
 nav.navbar.bootsnav .heder-menu-button .navbar-toggler {
   float: none;
   padding: 0;
@@ -7918,7 +7912,7 @@ header a.logo {
   vertical-align: middle;
 }
 header a.logo img {
-  max-height: 80px;
+  max-height: 26px;
 }
 header .left-nav .sidebar-part1 a.logo img {
   max-height: inherit;
@@ -14583,7 +14577,7 @@ a img.aligncenter {
   background-color: #141414;
 }
 .footer-logo {
-  max-height: 80px;
+  max-height: 28px;
 }
 
 /* footer input */
@@ -15204,10 +15198,6 @@ footer .instafeed-grid.gutter-extra-large {
   display: inline-block;
 }
 
-.parallax-title:hover {
-  color: green !important;
-}
-
 /* home - blog grid */
 .highlight-bg-text {
   padding: 5px 16px;
@@ -15448,15 +15438,19 @@ footer .instafeed-grid.gutter-extra-large {
   z-index: 9999;
 }
 
+.fix-nav {
+  position: fixed;
+  top: 0;
+}
 .modal-logo {
-  margin: 20px auto;
-  max-width: 200px;
+  width: 200px;
+  margin: 15px auto;
+  border-radius: 5px;
 }
 
 .section-logo {
   height: 100px;
-  width: 110px;
-  margin-bottom: 10px;
-  border-radius: 15px;
+  margin-bottom: 5px;
   padding: 5px;
+  border-radius: 10px;
 }
